@@ -40,7 +40,7 @@ function loadCoords() {
   const loadedCoords = localStorage.getItem(COORDS);
   if (loadedCoords===null) {}
     askforCoords();
-  }else {
+  } else {
     const parsedCoords= JSON.parse(loadedCoords);
     getWeather(parsedCoords.latitude,parsedCoords.longitude);
   }

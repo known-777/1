@@ -38,7 +38,7 @@ function askforCoords() {
 }
 function loadCoords() {
   const loadedCoords = localStorage.getItem(COORDS);
-  if (loadedCoords===null) {}
+  if (loadedCoords===null) {
     askforCoords();
   } else {
     const parsedCoords= JSON.parse(loadedCoords);
